@@ -1,3 +1,3 @@
-ID|NAME|EMAIL
-TEST_1234|john|john@gmail.com
-TEST_1235|เทพ|inwza@gmail.com
+ID|NAME|EMAIL|DETAILS
+TEST_1234|john|john@gmail.com|[{"color" : "black","size" : "XL"}]
+TEST_1235|เทพเกมส์|inwza@gmail.com|[{"color" : "green","size" : "M"}]
