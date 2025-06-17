@@ -9,7 +9,7 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 
 import java.util.List;
 
-public class JsonProductDetailsConverter extends AbstractBeanField<ProductDetail, String> {
+public class JsonProductDetailsConverter extends AbstractBeanField<List<ProductDetail>, String> {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
