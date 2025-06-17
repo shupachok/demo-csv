@@ -1,6 +1,10 @@
 package com.ex.democsv.model;
 
+import com.ex.democsv.converter.JsonProductDetailsConverter;
 import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvCustomBindByName;
+
+import java.util.List;
 
 public class CsvData {
 
@@ -12,6 +16,17 @@ public class CsvData {
 
     @CsvBindByName(column = "EMAIL")
     private String email;
+
+    @CsvCustomBindByName(column = "DETAILS", converter = JsonProductDetailsConverter.class)
+    private List<ProductDetail> details;
+
+    public List<ProductDetail> getDetails() {
+        return details;
+    }
+
+    public void setDetails(List<ProductDetail> details) {
+        this.details = details;
+    }
 
     public String getId() {
         return id;
